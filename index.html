@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>BarberShop</title>
+</head>
+
+<style>
+
+body {
+  background: linear-gradient(to bottom, #0f0f0f, #2b2b2b);
+  margin: 0%;
+  padding: 0%;
+  min-height: 100vh;
+}
+
+h1,h2,h3 {
+  text-align: center;
+  font-size: 43px;
+  color: #E6C76E;
+  font-family: 'Bungee Shade', cursive;
+  text-shadow: 2px 2px 0 black,
+  -2px -2px 0 black,
+  2px -2px 0 black,
+  -2px 2px 0 black,
+  0 0 5px black;
+}
+.topo {
+  background-image: url("BarberBanner.jpeg");
+  width: 100%;
+  height: 370px;
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0%;
+  padding: 0%;
+  display: block;
+}
+.desc {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 35px;
+  text-align: center;
+  margin: 12px;
+  padding: 12px;
+  text-shadow: 2px 2px 5px black;
+  margin-top: -100px;
+  position: relative;
+  color: #E6C76E;
+}
+
+.Linha   {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #E6C76E;;
+}
+
+.Linha::before,
+.Linha::after    {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: #E6C76E;;
+}
+
+.Agendamento    {
+  color: #E6C76E;
+  text-shadow: 5px 5px 10px black;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 25px;
+  text-align: center;
+  
+  
+}
+
+.Valor   {
+  font-size: 35px;
+  color: #E6C76E;
+  font-family: 'Bungee Shade', cursive;
+  text-align: center;
+  text-shadow: 5px 5px 10px black;
+}
+
+.imagem {
+  border-radius: 50px;
+  width: 130px;
+  margin: 130px auto;
+  display: block;
+  margin-top: 50px;
+  transition: width 1s;
+  animation: pulse 5s infinite;
+}
+
+.imagem:hover {
+  width: 300px;
+}
+
+.imagem.parar {
+  animation: none;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.45); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+
+body {
+  background: linear-gradient(to bottom, #0f0f0f, #2b2b2b);
+  min-height: 100vh;
+}
+
+.Valor   {
+  font-size: 35px;
+  color: #E6C76E;
+  font-family: 'Bungee Shade', cursive;
+  text-align: left;
+  text-shadow: 5px 5px 10px black;
+}
+
+.Agendamento    {
+  color: #E6C76E;
+  text-shadow: 5px 5px 10px black;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 25px;
+  
+  
+}
+
+.topo {
+  background-image: url("BarberBannerMobile.jpeg");
+  width: 100%;
+  height: 130px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+        }
+
+   }
+
+</style>
+
+<body>
+
+<img class="topo">
+
+
+<h1>Seu estilo começa aqui!</h1>
+
+<img class="imagem" src="https://dicasdecabelo.com.br/wp-content/uploads/2024/06/corte-americano-cabelo-cacheado05.jpg" onclick="this.classList.toggle('parar')">
+<p class="desc">Americano</p>
+
+<img class="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vT_RTpLPNqKVwQDNF8cICDcUoVry1whzFo2aRS2LWMCXJI87it7cLIg&s=10">
+<p class="desc">Mullet</p>
+
+<img class="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9fsIh_4BkkL2YPdKSyc61v_alKdxpOFYwYeKHCjwdWOGXFWdlOXpvq_E&s=10">
+<p class="desc">Moicano Disfarçado</p>
+
+<img class="imagem" src="https://i.pinimg.com/474x/13/95/ba/1395ba88ba4b23aee8f1546289c6139e.jpg">
+<p class="desc">Luzes Masculino</p>
+
+<img class="imagem" src="https://i.pinimg.com/736x/26/27/d4/2627d4170cf5a1fe8e18b17f5f81647a.jpg">
+<p class="desc">Nevou</p>
+
+<img class="imagem" src="https://negociosdebeleza.beautyfair.com.br/wp-content/uploads/2025/10/corte-de-cabelo-masculino-low-fade.jpeg">
+
+<p class="desc">
+  Social
+</p>
+
+<img class="imagem" src="https://i.pinimg.com/originals/cc/75/6e/cc756ee93c91c20b29c2c1d2434dfee8.png">
+
+<p class="desc">
+  Corte+Listra
+</p>
+
+<img class="imagem" src="https://i.pinimg.com/originals/20/14/b7/2014b7336084a9ff5132ae5461c614b5.jpg">
+
+<p class="desc">
+  Sombrancelha
+</p>
+
+<h2 class="Linha">
+  Valores
+</h2>
+
+<p class="Valor">
+  Corte........................... R$ 55
+</p>
+
+<p class="Valor">
+  Sombrancelha........... R$ 20
+</p>
+
+<p class="Valor">
+  Corte+Pintura........... R$160
+</p>
+
+<p class="Valor">
+  Luzes Masculino..... R$ 80
+</p>
+
+<p class="Valor">
+  Nevou....................... R$ 100
+</p>
+
+<h3 class="Linha">
+  Horarios
+</h3>
+
+<p class="Agendamento">
+  Seg/Sex...09:00-12:00/15:00-19:00
+</p>
+
+<p class="Agendamento">
+  Sab........10:00-13:00
+</p>
+
+</body>
+</html>
